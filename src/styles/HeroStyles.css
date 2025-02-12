@@ -17,7 +17,7 @@
     background-image: url("/imgs/Portada.jpg");
     background-size: cover;
     background-position: center;
-    filter: brightness(0.7);
+    filter: brightness(0.5);
     z-index: 0;
   }
   
