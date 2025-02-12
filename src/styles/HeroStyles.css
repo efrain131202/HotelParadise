@@ -1,0 +1,67 @@
+.section-background {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .section-background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/imgs/Portada.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.7);
+    z-index: 0;
+  }
+  
+  .text-container {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+  }
+  
+  .text-container h1 {
+    margin: 0;
+    font-size: clamp(30px, 6vw, 60px);
+    font-weight: 900;
+  }
+
+  .text-container p {
+    margin-top: 10px;
+    font-size: clamp(15px, 2vw, 25px);
+    font-weight: bold;
+  }
+  
+  .menu-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 30px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .menu-button:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  @media (max-width: 768px) {
+    .section-background {
+      height: 70vh;
+    }
+  }
+  
